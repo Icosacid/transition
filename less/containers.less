@@ -1,0 +1,36 @@
+/* Reset */
+*,
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+/* Background */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: @black;
+}
+#transition-web {
+	padding-top: 70px;
+}
+.page-header {
+	background: @black;
+	padding: 15px 30px;
+	.flexrow();
+	.flexstart();
+	border-top: solid 5px @grey-444;
+
+	.geom {
+		margin-right: 20px;
+	}
+}
+.page-content {
+	padding: 20px 100px 100px;
+
+	&.no-padding {
+		padding: 0;
+	}
+}
