@@ -1,4 +1,8 @@
 #home {
+	h1 {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
 	p {
 		width: 70%;
 		text-align: justify;
@@ -41,11 +45,31 @@
 			margin: 50px 0 30px;
 		}
 	}
-	.partners {
-		filter: saturate(0);
-		img {
+	.acks {
+		.ack {
+			margin: 20px;
+			.flexcol();
+			&.superposition img {
+				padding: 10px;
+			}
+			&.aadn img {
+				padding: 10px;
+			}
+			&.aadn, &.mirage, &.superposition {
+				img {
+					filter: invert(100%);
+				}
+			}
+			&.melting p.fa {
+				font-size: 110px;
+			}
+		}
+		img, .ack.melting p.fa {
 			width: 150px;
 			margin: 20px 40px;
+		}
+		p {
+			.center();
 		}
 	}
 }

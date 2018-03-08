@@ -21,17 +21,19 @@
 <div id="transition-web">
 	<div class="header"
 		 v-bind:class="{ 'mobile-menu-open': isOpen }">
+        <!--
 		<div class="logo">
 			<a href="#" class="menu-tab">
 				<p>Transition logo</p>
 			</a>
 		</div>
+		-->
 		<div class="menu" v-on:click="isOpen = false">
 			<a href="#abstract" class="menu-tab home">Abstract</a>
 			<a href="#showcase" class="menu-tab home">Showcase</a>
 			<a href="#mediums" class="menu-tab home">Mediums</a>
 			<a href="#about" class="menu-tab home">About</a>
-			<a href="#partners" class="menu-tab home">Partners</a>
+			<a href="#acks" class="menu-tab home">Acknowledgements</a>
 			<a href="#contact" class="menu-tab home">Contact</a>
 		</div>
 		<div class="mobile-burger" v-on:click="isOpen = !isOpen">
@@ -56,6 +58,7 @@
 		<div class="page-banner"></div>
 
 		<div class="page-content">
+            <h1>_Transition</h1>
 			<div class="abstract" id="abstract">
 				<h3>Abstract</h3>
 				<p>
@@ -117,16 +120,37 @@
 					<img src="img/art/pyramid.jpg" />
 				</div>
 			</div>
-			<div class="partners" id="partners">
-				<h3>Partners</h3>
+			<div class="acks" id="acks">
+				<h3>Acknowledgements</h3>
 				<div class="flexrow flexwrap">
-					<img src="img/website/triango.svg" />
-					<img src="img/website/triango.svg" />
-					<img src="img/website/triango.svg" />
-					<img src="img/website/triango.svg" />
-					<img src="img/website/triango.svg" />
-					<img src="img/website/triango.svg" />
-					<img src="img/website/triango.svg" />
+                    <a href="http://www.theoriz.com/" target="_blank" class="ack theoriz">
+                        <img src="img/other/theoriz.png" />
+                        <p>Theoriz Studio</p>
+                    </a>
+                    <a href="http://benjamin.kuperberg.fr/" target="_blank" class="ack benkuper">
+                        <img src="img/other/benkuper.png" />
+                        <p>Ben Kuper</p>
+                    </a>
+                    <a href="https://superposition.fr/" target="_blank" class="ack superposition">
+                        <img src="img/other/superposition.png" />
+                        <p>Superposition</p>
+                    </a>
+                    <a href="http://aadn.org/" target="_blank" class="ack aadn">
+                        <img src="img/other/aadn.png" />
+                        <p>AADN</p>
+                    </a>
+                    <a href="https://www.miragefestival.com/" target="_blank" class="ack mirage">
+                        <img src="img/other/mirage.jpg" />
+                        <p>Mirage Festival</p>
+                    </a>
+                    <a href="https://www.les-subs.com/" target="_blank" class="ack subs">
+                        <img src="img/other/subs.png" />
+                        <p>Les Subsistances</p>
+                    </a>
+                    <a href="https://melting.space/new/#/blog" target="_blank" class="ack melting">
+                        <p class="fa fa-connectdevelop"></p>
+                        <p>Melting Space</p>
+                    </a>
 				</div>
 			</div>
 		</div>
@@ -149,9 +173,6 @@
 			</a>
 			<a class='github' title="Check this page repo on GitHub" href="https://github.com/Icosacid/transition" target='_blank'>
 				<span class="fa fa-github"></span>
-			</a>
-			<a class='codepen' title="Play live with some particle code on Codepen" href="https://codepen.io/Icosacid" target='_blank'>
-				<span class="fa fa-codepen"></span>
 			</a>
 			<a class='jeanf' title="jeanf website" href="http://lejeanf.com/" target="_blank">
 				<img src="img/other/jeanf.png" />
