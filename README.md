@@ -1,5 +1,5 @@
-# icosacid-website
-Website for icosacid.com
+# transition-website
+Website for alexandrix.com/transition
 
 # Setup
 * Install npm (https://docs.npmjs.com/)
