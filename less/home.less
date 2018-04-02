@@ -4,7 +4,7 @@
 		margin-bottom: 0;
 	}
 	p {
-		width: 70%;
+		width: 65%;
 		text-align: justify;
 		font-size: 1.2rem;
 
@@ -18,7 +18,7 @@
 	img {
 		max-width: 100%;
 		&.smaller {
-			max-width: 600px;
+			width: 600px;
 		}
 	}
 	h3 {
@@ -44,29 +44,50 @@
 			margin: 20px 0 10px;
 			font-size: 1.1rem;
 		}
-		.bio-section {
-			.flexrow();
-			.flexstart();
+		.bio-sections {
+			font-size: 0;// Kill whitespace
 
-			@media (max-width: 900px) {
-				.flexcol();
-			}
+			.bio-section {
+				width: 50%;
+				display: inline-block;
+				vertical-align: top;
 
-			img {
-				width: 130px;
-				margin: 15px;
+				.picandtext {
+					.flexrow();
+					.flexwrap();
+					.flexstart();
+					align-items: flex-start;
+
+					h4 {
+						margin-left: 20px;
+					}
+					img {
+						width: 130px;
+						margin: 15px;
+					}
+				}
+
+				@media (max-width: 900px) {
+					width: 100%;
+				}
+
 			}
 		}
+
 		.location {
 			margin-top: 40px;
 		}
 		p {
 			font-size: 0.9rem;
 		}
-		.another-image img {
-			width: 70%;
-			text-align: center;
-			margin: 50px 0 30px;
+		.another-image {
+			.center();
+
+			img {
+				max-height: 350px;
+				text-align: center;
+				margin: 50px 0 30px;
+			}
 		}
 
 	}
@@ -80,7 +101,7 @@
 			&.aadn img {
 				padding: 10px;
 			}
-			&.aadn, &.mirage, &.superposition {
+			&.aadn, &.mirage, &.superposition, &.melting {
 				img {
 					filter: invert(100%);
 				}
