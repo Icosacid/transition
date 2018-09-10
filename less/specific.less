@@ -73,20 +73,25 @@
 	background-image: url('../img/art/finalbuild/build12-12.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	height: 250px;
+	height: 200px;
 	width: 100%;
 	background-position-y: 50%;
-	.small-mobile-height();
+	//.small-mobile-height();
 
 	#home & {
 		//background-image: url('../img/misc/hex-fire.jpg');
 		//background-size: 1500px 985px;
 		background-position-x: 50%;
-		//@media (max-width: 1000px) { .autoimage(); }
+		/*
+		@media (max-width: 1000px) { .autoimage(); }
 		@media (max-width: 800px) {
 			height: 150px;
 		}
 		@media (max-width: 500px) { .autoimage(); }
+		*/
+		@media (max-width: 800px) {
+			display: none;
+		}
 	}
 }
 .autoimage {
